@@ -24,18 +24,29 @@
   </head>
   <body>
 
+    <!-- <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+    <canvas id="canvas2">Canvas is not supported in your browser.</canvas> -->
+
     <?php
+
+    // Stampare una stringa verde se la variabile password passata in GET è uguale a “Boolean”, altrimenti stampare una stringa rossa.
 
       $password = $_GET["pass"];
 
-      if ($password == Boolean) {
-        echo "<span class='testo verde'>";
-        echo $password . " è la password corretta!";
-        echo "</span>";
-      } else {
-        echo "<span class='testo rosso'>";
-        echo $password . " non è la password corretta!";
-        echo "</span>";
+      if (!empty($password)) {
+        if ($password == Boolean) {
+          echo "<canvas id='canvas'>Canvas is not supported in your browser.</canvas>";
+          echo "<canvas id='canvas2'>Canvas is not supported in your browser.</canvas>";
+          echo "<span class='testo verde'>";
+          echo $password . " è la password corretta!";
+          echo "</span>";
+        } else {
+          echo "<canvas id='canvas'>Canvas is not supported in your browser.</canvas>";
+          echo "<canvas id='canvas2'>Canvas is not supported in your browser.</canvas>";
+          echo "<span class='testo rosso'>";
+          echo $password . " non è la password corretta!";
+          echo "</span>";
+        }
       }
 
 

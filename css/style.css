@@ -24,7 +24,22 @@ body{
 
 .testo.verde{
   color: green;
+  background: #fff;
+  z-index: 2;
+  border-radius: 5px;
+  padding: 5px;
 }
 .testo.rosso{
   color: red;
+  background: #fff;
+  z-index: 2;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+canvas {
+display: block;
+position:absolute;
+top:0;
+left:0;
 }
