@@ -24,9 +24,6 @@
   </head>
   <body>
 
-    <!-- <canvas id="canvas">Canvas is not supported in your browser.</canvas>
-    <canvas id="canvas2">Canvas is not supported in your browser.</canvas> -->
-
     <?php
 
     // Stampare una stringa verde se la variabile password passata in GET è uguale a “Boolean”, altrimenti stampare una stringa rossa.
